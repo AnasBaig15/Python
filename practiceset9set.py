@@ -15,44 +15,56 @@
 # b . printLanguages()
 # b.showLanguage()
 
+# class Employee:
+#     a = 1
+
+# class Programmer(Employee):
+#     b = 2
+# class Manager(Programmer):
+#     c = 3
+
+# o = Employee()
+# print(o.a)
+
+# o = Programmer()
+# print(o.a , o.b)
+
+# o = Manager()
+# print(o.a , o.b , o.c)
+
+
+# class Employee:
+#     def __init__(self):
+#         print("Constructor of Employee")
+#     a = 1
+
+# class Programmer(Employee):
+#      def __init__(self):
+#             print("Constructor   of         Programmer")
+#      b = 2
+# class Manager(Programmer):
+#     def __init__(self):
+#                 super().__init__()
+#                 print("Constructor   of         Manager")
+#     c = 3
+
+# o = Employee()
+# print(o.a)
+
+# o = Programmer()
+# print(o.a , o.b)
+
+# o = Manager()
+# print(o.a , o.b , o.c)
+
 class Employee:
     a = 1
+    def show(self):
+        print(f"The class value of a is {self.a}")
+e = Employee()
+e.a = 45
 
-class Programmer(Employee):
-    b = 2
-class Manager(Programmer):
-    c = 3
-
-o = Employee()
-print(o.a)
-
-o = Programmer()
-print(o.a , o.b)
-
-o = Manager()
-print(o.a , o.b , o.c)
-
-class Employee:
-    a = 1
-
-class Programmer(Employee):
-    b = 2
-class Manager(Programmer):
-    c = 3
-
-o = Employee()
-print(o.a)
-
-o = Programmer()
-print(o.a , o.b)
-
-o = Manager()
-print(o.a , o.b , o.c)
-
-
-
-
-
+e.show
 
 
 
